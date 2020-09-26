@@ -23,7 +23,8 @@
   "homepage": "https://github.com/tajide1/Transportation-Web-App#readme",
   "devDependencies": {
     "browser-sync": "^2.26.12",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "prettier": "2.1.2"
   },
   "dependencies": {
     "express": "^4.17.1"
