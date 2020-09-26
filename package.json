@@ -1,0 +1,31 @@
+{
+  "name": "transportation-web-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tajide1/Transportation-Web-App.git"
+  },
+  "keywords": [
+    "node",
+    "nodemon"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tajide1/Transportation-Web-App/issues"
+  },
+  "homepage": "https://github.com/tajide1/Transportation-Web-App#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
