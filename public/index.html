@@ -211,7 +211,14 @@
 <session id ="fares">
   <div>
     <h1>Fares</h1>
-  </div>
+    <strong>Start: </strong>
+    <input type="text" id="start" onchange="calcRoute()">
+    <strong>End: </strong>
+    <input type="text" id="end" onchange="calcRoute()">
+    <div id="map" ></div>
+    <div id="directionsPanel" ></div>
+
+</div>
 
 
 
@@ -270,10 +277,47 @@ the corresponding sections are also to be added here    ........................
 </selection>
 <!-- footer end -->
 <script src="./smooth-scroll.js"></script>
+<script src="../app.js"></script>
 <script>
-	var scroll = new SmoothScroll('a[href*="#"]');
+  var scroll = new SmoothScroll('a[href*="#"]');
 </script>
 
+<script>
+  var map;
+  function calcRoute() {
+    var  directionsService = new google.maps.DirectionsService();
+    var directionsRenderer = new google.maps.DirectionsRenderer(); 
+    var start = document.getElementById('start').value;
+    var end = document.getElementById('end').value;
+    directionsRenderer.setMap(map);
+    directionsRenderer.setPanel(document.getElementById('directionsPanel'));
+    var request = {
+      origin: start,
+      destination: end,
+      travelMode: 'TRANSIT'
+    };
+    directionsService.route(request, function(result, status) {
+      if (status == 'OK') {
+        
+        directionsRenderer.setDirections(result);
+      }
+    });
+  }
+  function initMap() {
+    var windsor = new google.maps.LatLng(42.31785, -83.03387);
+    var mapOptions = {
+      zoom:7,
+      center: windsor
+    }
+    map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+  }
+  
+  
+</script>
+<script defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdB3UfQ2EH61_03Bdyzg6Z1aqozO7eBOo&callback=initMap">
+</script>
 
 </body>
 </html>
