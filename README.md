@@ -1,9 +1,9 @@
 # Boost - A Strategy for Green Travel
 Under the current issues (COVID) and rising concerns over congestion of traffic and air pollution, we decided to make a website where users are allowed to book three different modes of transport (all while keeping price and helping the environment to ensure ease of mind):
 
--Using a Bus-Oriented System
--Using a Car-booking System (with preference for Electronic vehicles)
--Using Rent-able Bikes
+- Using a Bus-Oriented System
+- Using a Car-booking System (with preference for Electronic vehicles)
+- Using Rent-able Bikes
 All these can be accessed on our website by clicking the icons of the respective mode of transportation.
 
 We displayed the respective fare amounts in accordance to the user's preferred mode of transport, with special attention to the growing increase in the traffic and as a result we have come up with several ideas.
