@@ -20,8 +20,9 @@
 
 <style>
 .carousel-inner > .item > img { width:100%; height:570px; }
-body {
-	background colour:navy }									 
+#body {
+  background colour:navy ;
+}									 
 .about-content {
   text-align: center;
 }
@@ -42,7 +43,7 @@ body {
 	
 </head>
  
-<body style="background-color:#021A80>
+<body > 
      <!-- navigation -->
 <section id="nav-bar">
  <nav class="navbar navbar-expand-lg navbar-light ">
@@ -149,20 +150,24 @@ body {
  <div class="row services">
   <div class="col-md-4 text-center">
    <div class="icon">
-    <i class="fa fa-bus" aria-hidden="true"></i>
+     <a href="../public/bus.html">
+    <i class="fa fa-bus" aria-hidden="true"></i></a>
    </div>
    <h3>Eco-Friendly Bus</h3>
+   
   <p style="font-size:150%;">>With the use of Eco-friendly buses, we aid to maintain our local carbon footprint to a minimum and provide a more user-friendly price.</div>
   <div class="col-md-4 text-center">
    <div class="icon">
-    <i class="fa fa-car" aria-hidden="true"></i>
+     <a href="../public/car.html">
+    <i class="fa fa-car" aria-hidden="true"></i></a>
    </div>
    <h3>Eco-Friendly Car</h3>
   <p style="font-size:150%;">>If a faster solution is needed, the use of Eco-friendly cars (with a preference for electric-powered ones) is available for our users.</p>
   </div>
   <div class="col-md-4 text-center">
    <div class="icon">
-    <i class="fa fa-bicycle" aria-hidden="true"></i>
+     <a href="bike.html">
+    <i class="fa fa-bicycle" aria-hidden="true"></i></a>
    </div>
    <h3>Eco-Friendly Bikes</h3>
   <p style="font-size:150%;">>For short distance travel, new methods of transport are being created everyday instead of the usual car or bus. Our suggested method is city-controlled bikes that are easily accessed at our hotspots for quick access between favoured destinations.</p>
@@ -243,10 +248,10 @@ body {
  </div>
 </section>
 <!-- -------------------------FARES-------------------->
-<session id ="fares">
+<!-- <session id ="fares"> -->
 
   <!-- <div> -->
-    <h1>Fares</h1>
+    <!-- <h1>Fares</h1> -->
     <!-- <strong>Start: </strong>
 
   <div>
@@ -262,7 +267,7 @@ body {
 <!-- </div>  -->
 
 
-<meta charset="utf-8">
+<!-- <meta charset="utf-8">
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -288,7 +293,7 @@ body {
 	<body>
 		<div class="container">
 			<div class="row">
-				<!-- left col -->
+				<!-- left col 
 				<div id="form" class="form-horizontal col-sm-8">
 					<div class="form-group">
 						<b><label for="from-input">From:</label></b>
@@ -327,8 +332,8 @@ body {
 		var distanceDirection;
 		var distanceDisplay;
 		function string2Location(input, index) {
-			var searchBox = new google.maps.places.SearchBox(input);
-			// map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+			var searchBox = new google.maps.places.SearchBox(input); -->
+			<!-- // map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 			map.addListener('bounds_changed', function() {
 				searchBox.setBounds(map.getBounds());
 			});
@@ -387,8 +392,8 @@ body {
 					lat: 35.0823294,
 					lng: -106.8165662
 				},
-				zoom: 13,
-				// https://developers.google.com/maps/documentation/javascript/maptypes
+				zoom: 13, -->
+				<!-- // https://developers.google.com/maps/documentation/javascript/maptypes
 				mapTypeId: 'roadmap', // https://developers.google.com/maps/documentation/gaming/support/roadmap
 			});
 			var from = document.getElementById('from-input');
@@ -432,7 +437,7 @@ body {
 
 
 
-</session>
+</session> -->
 <!-- here we need to add the forms for the transport the ecofriendly and the choice etc etc ...................
 the corresponding sections are also to be added here    ................................           -->
 
